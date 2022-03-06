@@ -30,24 +30,35 @@ public class Aro {
         CoordenadaY = valorY;
         setRadio(valorRadio);
     }
-
+/**
+     * @return the Radio
+     */
   public double obterDiametro() {
         return getRadio() * 2;
     }
-
+/**
+     * @return the Circunferencia
+     */
     public double obterCircunferencia() {
         return Math.PI * obterDiametro();
     }
-
+/**
+     * @return the Superficie
+     */
     public double obterSuperficie() {
         return Math.PI * getRadio() * getRadio();
     }
-
+/**
+     * @return the String posicion del centro
+     */
     @Override
     public String toString() {
         return "Centro = [" + getCoordendaX() + "," + getCoordenadaY() + "]; Radio = " + getRadio();
     }
-
+  /**
+     * @param trasladarX the trasladarX
+     * @param trasladarY the trasladarY
+     */
     public void trasladarCentro(int trasladarX, int trasladarY){
         setCoordendaX(getCoordendaX() + trasladarX);
         setCoordenadaY(getCoordenadaY() + trasladarY);
