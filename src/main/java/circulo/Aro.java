@@ -7,7 +7,7 @@ package circulo;
 public class Aro {
     public static final double MINIMO = 0.0;
     
-    public final double LIMITERADIO = 0.0;
+    public static final double LIMITERADIO = 0.0;
 
     /**
      * Get the value of LIMITERADIO
