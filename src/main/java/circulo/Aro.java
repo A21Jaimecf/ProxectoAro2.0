@@ -32,32 +32,32 @@ public class Aro {
     }
 
     public void establecerX(int valorX) {
-        CoordendaX=valorX;
+        setCoordendaX(valorX);
     }
 
     public int obterX() {
-        return CoordendaX;
+        return getCoordendaX();
     }
 
     public void establecerY(int valorY) {
-        CoordenadaY=valorY;
+        setCoordenadaY(valorY);
     }
 
     public int obterY() {
-        return CoordenadaY;
+        return getCoordenadaY();
     }
 
     public void establecerRadio(double valorRadio) {
 
-        radio=(valorRadio < MINIMO ? MINIMO : valorRadio);
+        setRadio(valorRadio < MINIMO ? MINIMO : valorRadio);
     }
 
     public double obterRadio() {
-        return radio;
+        return getRadio();
     }
 
     public double obterDiametro() {
-        return radio * 2;
+        return getRadio() * 2;
     }
 
     public double obterCircunferencia() {
@@ -65,16 +65,58 @@ public class Aro {
     }
 
     public double obterSuperficie() {
-        return Math.PI * radio * radio;
+        return Math.PI * getRadio() * getRadio();
     }
 
     @Override
     public String toString() {
-        return "Centro = [" + CoordendaX + "," + CoordenadaY + "]; Radio = " + radio;
+        return "Centro = [" + getCoordendaX() + "," + getCoordenadaY() + "]; Radio = " + getRadio();
     }
 
     public void trasladarCentro(int trasladarX, int trasladarY){
-        CoordendaX=CoordendaX + trasladarX;
-        CoordenadaY=CoordenadaY + trasladarY;
+        setCoordendaX(getCoordendaX() + trasladarX);
+        setCoordenadaY(getCoordenadaY() + trasladarY);
+    }
+
+    /**
+     * @return the CoordendaX
+     */
+    public int getCoordendaX() {
+        return CoordendaX;
+    }
+
+    /**
+     * @param CoordendaX the CoordendaX to set
+     */
+    public void setCoordendaX(int CoordendaX) {
+        this.CoordendaX = CoordendaX;
+    }
+
+    /**
+     * @return the CoordenadaY
+     */
+    public int getCoordenadaY() {
+        return CoordenadaY;
+    }
+
+    /**
+     * @param CoordenadaY the CoordenadaY to set
+     */
+    public void setCoordenadaY(int CoordenadaY) {
+        this.CoordenadaY = CoordenadaY;
+    }
+
+    /**
+     * @return the radio
+     */
+    public double getRadio() {
+        return radio;
+    }
+
+    /**
+     * @param radio the radio to set
+     */
+    public void setRadio(double radio) {
+        this.radio = radio;
     }
 }
