@@ -7,6 +7,10 @@ import java.text.DecimalFormat;
  * @author JaimeCF
  */
 public class Main {
+     /**
+     * Inicializacion del metodo MAIN
+     * @param args the trasladarX
+     */
     public static void main(String[] args) {
         Aro circulo = new Aro(37,43,2.5);
         String saida =

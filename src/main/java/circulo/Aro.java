@@ -5,8 +5,13 @@ package circulo;
  * @author JaimeCF
  */
 public class Aro {
+      /**
+     * Crear contante MINIMO
+     */
     public static final double MINIMO = 0.0;
-    
+    /**
+     * Crear constante LIMITERADIO
+     */
     public static final double LIMITERADIO = 0.0;
 
     /**
@@ -22,9 +27,17 @@ public class Aro {
     private int CoordenadaY;
     private double radio;
 
+     /**
+     * creación do método ARO 
+     */
     public Aro() {
     }
-
+     /**
+     * Inicializacion do método ARO 
+     * @param valorX the CoordenadaX
+     * @param valorY the CoordenadaY
+     * @param valorRadio the setRadio
+     */
     public Aro(int valorX, int valorY, double valorRadio) {
         CoordendaX = valorX;
         CoordenadaY = valorY;
